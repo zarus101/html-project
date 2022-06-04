@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/1c2c2462bf.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="center">
+        <h1>Create your account</h1>
+        <form method="post">
+          
+          <div class="txt_field">
+            <input type="text" required/>
+            <span></span>
+            <label>FirstName</label>
+          </div>
+          <div class="txt_field">
+            <input type="text" required/>
+            <span></span>
+            <label>LastName</label>
+          </div>
+          <div class="txt_field">
+            <input type="emaill" required/>
+            <span></span>
+            <label>Email</label>
+          </div>
+        
+          
+          <div >
+            
+            <div class="txt_field">
+                <input id="password" class="form-control input-md"
+                name="password" type="password" >
+                <span></span>
+                <label>
+                    Password
+                </label>
+                <span class="show-pass" onclick="toggle()">
+                    <i class="far fa-eye" onclick="myFunction(this)"></i>
+                </span>
+                <div id="popover-password">
+                    <p><span id="result"></span></p>
+                    <div class="progress">
+                        <div id="password-strength" 
+                            class="progress-bar" 
+                            role="progressbar" 
+                            aria-valuenow="40" 
+                            aria-valuemin="0" 
+                            aria-valuemax="100" 
+                            style="width:0%">
+                        </div>
+                    </div>
+                    <ul class="list-unstyled">
+                        <li class="">
+                            <span class="low-upper-case">
+                                <i class="fas fa-circle" aria-hidden="true"></i>
+                                &nbsp;Lowercase &amp; Uppercase
+                            </span>
+                        </li>
+                        <li class="">
+                            <span class="one-number">
+                                <i class="fas fa-circle" aria-hidden="true"></i>
+                                &nbsp;Number (0-9)
+                            </span> 
+                        </li>
+                        <li class="">
+                            <span class="one-special-char">
+                                <i class="fas fa-circle" aria-hidden="true"></i>
+                                &nbsp;Special Character (!@#$%^&*)
+                            </span>
+                        </li>
+                        <li class="">
+                            <span class="eight-character">
+                                <i class="fas fa-circle" aria-hidden="true"></i>
+                                &nbsp;Atleast 8 Character
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+         
+          
+          <Link to=""> <input type="submit" value="Register"/></Link>
+         
+        </form>
+      </div>
+
+<script src="main.js"></script>
+</body>
+</html>
